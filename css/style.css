@@ -144,6 +144,14 @@ a {
     margin: 20px;
     padding: 20px;
     border-bottom: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+
+}
+
+.notas img {
+    margin: 20px
 }
 
 .footer {
@@ -169,12 +177,16 @@ a {
 }
 
 .biografia {
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .biografia h1 {
     text-align: center;
@@ -182,6 +194,10 @@ a {
 }
 .biografia p {
     text-align: justify;
+}
+
+.biografia a {
+    color: black;
 }
 
 .shows {
@@ -294,6 +310,10 @@ a {
     }
     .boton {
         margin-bottom: 10px;
+    }
+
+    .biografia img {
+        max-width: 100%;
     }
 
 }
