@@ -1,0 +1,46 @@
+.banner {
+    @include full-size;
+    display: grid;
+    grid-template-areas: 
+    "img1 img2 titulo";
+    grid-template-rows: auto;
+    grid-template-columns: repeat(1fr);
+    position: relative;
+
+    h1 {
+    grid-area: titulo;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $text-color;
+    text-align: center;
+    font-size: 35px;    
+    -webkit-text-stroke: 1px black;
+    justify-self: center;
+    align-self: center;
+    }
+
+    img {
+        @include full-size;
+        object-fit: cover;
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include full-size;
+    @include flex-center;
+    z-index: 3;
+    .img1 {
+        grid-area: img1;
+        z-index: 1;
+    }
+    .img2 {
+        grid-area: img2;
+        z-index: 2;
+    }
+}
+
+
+

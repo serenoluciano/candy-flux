@@ -1,0 +1,14 @@
+.prensa {
+    @include biografia-prensa;
+}
+    .notas {
+        margin: 20px;
+        padding: 20px;
+        border-bottom: 3px solid black;
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+    }
+        .notas img {
+            margin: 10px
+        }

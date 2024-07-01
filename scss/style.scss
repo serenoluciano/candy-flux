@@ -1,0 +1,17 @@
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+@import "./base/generales";
+
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/footer";
+@import "./layout/main-biografia";
+@import "./layout/main-prensa";
+@import "./layout/main-musica";
+@import "./layout/main-shows";
+
+@import "./layout/mediaQ/media768";
+@import "./layout/mediaQ/media480"
+
+

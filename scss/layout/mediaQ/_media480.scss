@@ -1,0 +1,37 @@
+@media (max-width: 480px) {
+    a {
+        font-size: 16px;
+    }
+
+    header div img {
+        max-width: 60px;
+    }
+
+    ul li {
+        margin: 5px 0;
+    }
+
+    .banner h1 {
+        font-size: 24px;
+    }
+
+    .overlay {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+    .musica {
+        .discografia {
+            grid-template-columns: 1fr;
+            .album {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+    }
+    
+    }
+    

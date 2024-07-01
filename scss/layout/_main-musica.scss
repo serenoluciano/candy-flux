@@ -1,0 +1,36 @@
+.musica {
+    padding: 20px;
+    background-color: #fe8787;
+    text-align: center;
+    .discografia {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        .album {
+            text-align: center;
+            height: auto;
+            width: 100%;
+            @include flex-center;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+        .single {
+            @extend .album
+        }
+        .album {
+            grid-column: span 2; 
+            grid-row: span 2;
+            justify-content: flex-start;
+        }
+        .imgportada {
+            max-width: 100%; 
+            height: auto;
+        }
+        .plataformas img {
+            width: 30px;
+            height: 30px;
+            margin: 5px;
+        }
+        
+    }
+}

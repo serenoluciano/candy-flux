@@ -1,354 +1,265 @@
 * {
-    margin: 0;
-    font-family:  sans-serif;
-    box-sizing: border-box;
-}
-header {
-    background-color: #ff5151;
-    height: 81px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center ;
-    text-shadow: 1px 1px 1px #333;
-    font-weight: bold;
-    letter-spacing: 1.5px;
-}
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box; }
 
-ul {
+header {
+  background-color: #ff5151;
+  height: 81px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-shadow: 1px 1px 1px #333;
+  font-weight: bold;
+  letter-spacing: 1.5px; }
+  header ul {
     display: flex;
     flex-direction: row;
     gap: .9375rem;
-    margin-right: 20px;
-}
-
-li  {
-    list-style: none;
-}
-
-
-
-a {
+    margin-right: 20px; }
+  header li {
+    list-style: none; }
+  header a {
     text-decoration: none;
     color: white;
     list-style: none;
-    font-size: 18px;
-}
-
+    font-size: 18px; }
 
 .banner {
-    width:100%;
-    height: 100%;
-    display: grid;
-    grid-template-areas: 
-    "img1 img2 titulo";
-    grid-template-rows: auto;
-    grid-template-columns: repeat(1fr);
-    position: relative;
-}
-
-.banner h1 {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "img1 img2 titulo";
+  grid-template-rows: auto;
+  grid-template-columns: repeat(1fr);
+  position: relative; }
+  .banner h1 {
     grid-area: titulo;
     padding-top: 20px;
     padding-bottom: 20px;
     color: white;
     text-align: center;
-    font-size: 35px;    
+    font-size: 35px;
     -webkit-text-stroke: 1px black;
     justify-self: center;
-    align-self: center;
-}
-
-.overlay { 
-    position: absolute;
-    top: 0;
-    left: 0;
+    align-self: center; }
+  .banner img {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-}
+    object-fit: cover; }
 
-.banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.img1 {
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3; }
+  .overlay .img1 {
     grid-area: img1;
-    z-index: 1;
-}
-
-.img2 {
+    z-index: 1; }
+  .overlay .img2 {
     grid-area: img2;
-    z-index: 2;
-}
-
-.musica {
-    padding: 20px;
-    background-color: #fe8787;
-    text-align: center;
-
-}
-
-.discografia {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.album, .single {
-    text-align: center;
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-}
-
-.album {
-    grid-column: span 2; 
-    grid-row: span 2;
-    justify-content: flex-start;    
-}
-
-.imgportada {
-    max-width: 100%; 
-    height: auto;
-}
-
-.plataformas img {
-    width: 30px;
-    height: 30px;
-    margin: 5px;
-
-}
-
-.discografia p {
-    padding: 10px 0 10px 0;
-    color: white;
-}
-
-.prensa {
-    padding: 20px;
-    background-color: #fe8787;
-}
-
-.notas {
-    margin: 20px;
-    padding: 20px;
-    border-bottom: 3px solid black;
-    display: flex;
-    flex-direction: column;
-    max-width: 90%;
-
-}
-
-.notas img {
-    margin: 20px
-}
+    z-index: 2; }
 
 .footer {
-    background-color: #ff5151;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
-    bottom: 0;
-}
-.footer a {
+  background-color: #ff5151;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0; }
+  .footer a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
-}
-.iconos {
-    margin-top: 10px;
-}
-.iconos img {
-    width: 24px;
-    height: 24px;
-    margin: 0 5px;
-}
+    margin: 0 10px; }
+  .footer .iconos {
+    margin-top: 10px; }
+    .footer .iconos img {
+      width: 24px;
+      height: 24px;
+      margin: 0 5px; }
 
 .biografia {
-    max-width: 800px;
-    margin: auto;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.biografia h1 {
+  max-width: 800px;
+  margin: auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .biografia h1 {
     text-align: center;
-    color: #333;
-}
-.biografia p {
-    text-align: justify;
-}
+    color: #333; }
+  .biografia p {
+    text-align: justify; }
+  .biografia a {
+    color: black; }
 
-.biografia a {
-    color: black;
-}
+.prensa {
+  max-width: 800px;
+  margin: auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .prensa h1 {
+    text-align: center;
+    color: #333; }
+  .prensa p {
+    text-align: justify; }
+  .prensa a {
+    color: black; }
+
+.notas {
+  margin: 20px;
+  padding: 20px;
+  border-bottom: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  max-width: 90%; }
+
+.notas img {
+  margin: 10px; }
+
+.musica {
+  padding: 20px;
+  background-color: #fe8787;
+  text-align: center; }
+  .musica .discografia {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; }
+    .musica .discografia .album, .musica .discografia .single {
+      text-align: center;
+      height: auto;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-sizing: border-box; }
+    .musica .discografia .album, .musica .discografia .single {
+      grid-column: span 2;
+      grid-row: span 2;
+      justify-content: flex-start; }
+    .musica .discografia .imgportada {
+      max-width: 100%;
+      height: auto; }
+    .musica .discografia .plataformas img {
+      width: 30px;
+      height: 30px;
+      margin: 5px; }
 
 .shows {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-
-}
-.fechas {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px; }
+  .shows .fechas {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-bottom: 20px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-.fechas img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px 0 0 8px;
-}
-.detalles-shows {
-    flex-grow: 1;
-    padding: 20px;
-}
-.detalles-shows h2 {
-    margin: 0;
-    font-size: 24px;
-    color: #333;
-}
-.detalles-shows p {
-    margin: 5px 0;
-    color: #555;
-}
-.detalles-shows .dia,
-.detalles-shows .lugar {
-    font-weight: bold;
-}
-.boton {
-    background-color: #ff6b6b;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 0 20px 0 0;
-}
-.boton:hover {
-    background-color: #e55e5e;
-}
+    justify-content: space-between; }
+    .shows .fechas img {
+      width: 150px;
+      height: auto;
+      border-radius: 8px 0 0 8px; }
+    .shows .fechas .detalles-shows {
+      flex-grow: 1;
+      padding: 20px; }
+      .shows .fechas .detalles-shows h2 {
+        margin: 0;
+        font-size: 24px;
+        color: #333; }
+      .shows .fechas .detalles-shows p {
+        margin: 5px 0;
+        color: #555; }
+      .shows .fechas .detalles-shows .dia, .shows .fechas .detalles-shows .lugar {
+        font-weight: bold; }
+    .shows .fechas .boton {
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      cursor: pointer;
+      margin: 0 20px 10px 0; }
+      .shows .fechas .boton:hover {
+        background-color: #e55e5e; }
 
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
-
-    header div, nav {
-        width: 100%;
-        text-align: center;
-    }
-
-    ul {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    text-align: center; }
+    header div {
+      width: 100%;
+      text-align: center; }
+      header div img {
+        max-width: 180px; }
+    header nav {
+      width: 100%;
+      text-align: center; }
+      header nav ul {
         flex-direction: column;
         margin: 0;
         padding: 0;
-        gap: .0125rem;
-    }
-
-    ul li {
-        margin: 10px 0;
-    }
-
-    header div img {
-        max-width: 80px;
-    }
-
-    .banner {
-        grid-template-areas:
-        "img1"
-        "img2"
-        "titulo";
-        grid-template-columns: 1fr;
-    }
-
-    .overlay {
-        width: 100%;
-        padding: 5px;
-    }
-
+        gap: .0125rem; }
+        header nav ul li {
+          margin: 10px 0; }
+  .banner {
+    grid-template-areas: "img1" "img2" "titulo";
+    grid-template-columns: 1fr; }
     .banner h1 {
-        font-size: 28px;
-    }
-    
-    .discografia {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-    
-    .fechas {
-        width: 100%;
-        flex-direction: column;
-    }
+      font-size: 28px; }
+  .overlay {
+    width: 100%;
+    padding: 5px; }
+  .discografia {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .fechas {
+    width: 100%;
+    flex-direction: column; }
     .fechas img {
-        margin-top: 10px;
-    }
-    .boton {
-        margin-bottom: 10px;
-    }
-
-    .biografia img {
-        max-width: 100%;
-    }
-
-}
+      margin-top: 10px; }
+  .prensa img {
+    max-width: 100%; } }
 
 @media (max-width: 480px) {
-    a {
-        font-size: 16px;
-    }
-
-    header div img {
-        max-width: 60px;
-    }
-
-    ul li {
-        margin: 5px 0;
-    }
-
-    .banner h1 {
-        font-size: 24px;
-    }
-
-    .overlay {
-        width: 90%;
-        font-size: 14px;
-    }
-
-    .banner img {
-        width: 100%;
-    }
-    .discografia {
-        grid-template-columns: 1fr;
-    }
-
-    .album {
-        grid-column: span 1;
-        grid-row: span 1;
-    }
-}
+  a {
+    font-size: 16px; }
+  header div img {
+    max-width: 60px; }
+  ul li {
+    margin: 5px 0; }
+  .banner h1 {
+    font-size: 24px; }
+  .overlay {
+    width: 90%;
+    font-size: 14px; }
+  .banner img {
+    width: 100%; }
+  .musica .discografia {
+    grid-template-columns: 1fr; }
+    .musica .discografia .album, .musica .discografia .single {
+      grid-column: span 1;
+      grid-row: span 1; } }

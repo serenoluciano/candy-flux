@@ -1,0 +1,21 @@
+.footer {
+    background-color: $color-fondo;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    bottom: 0;
+    a {
+        color: $text-color;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    .iconos {
+        margin-top: 10px;
+        img {
+            width: 24px;
+            height: 24px;
+            margin: 0 5px;
+        }
+    }
+}
