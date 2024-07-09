@@ -1,6 +1,6 @@
 .musica {
     padding: 20px;
-    background-color: #fe8787;
+    background-color: #dfdbdb;
     text-align: center;
     .discografia {
         display: grid;
@@ -26,6 +26,7 @@
         .imgportada {
             max-width: 100%; 
             height: auto;
+            border-radius: 10px;
             &:hover {
                 scale: (0.9);
                 transition: 200ms linear 100ms;

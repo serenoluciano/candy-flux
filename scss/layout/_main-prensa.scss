@@ -1,14 +1,60 @@
 .prensa {
-    @include biografia-prensa;
+    max-width: 800px;
+    margin: auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+
+    text-align: center;
+    h1 {
+        color: #333;
+        margin-bottom: 20px;
+        font-size: 2em;
+        text-transform: uppercase;
+    }
 }
-    .notas {
-        margin: 20px;
+
+.notas {
+        margin: 20px 0;
         padding: 20px;
-        border-bottom: 3px solid black;
+        border-bottom: 2px solid #ddd;
         display: flex;
         flex-direction: column;
-        max-width: 90%;
+        align-items: center;
+        text-align: left;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    &:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     }
-        .notas img {
-            margin: 10px
-        }
+    img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+    h3 {
+        font-size: 1.5em;
+        margin: 0 0 10px 0;
+        color: #333; 
+    }
+    p {
+        font-size: 1em;
+        color: #666;
+        margin-bottom: 15px;
+        line-height: 1.6;  
+    }
+    a {
+        color: #1a73e8;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.2s ease;
+        &:hover {
+            color: #0056b3;
+        } 
+    }
+}
+
