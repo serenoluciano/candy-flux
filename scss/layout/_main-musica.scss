@@ -13,6 +13,7 @@
             @include flex-center;
             flex-direction: column;
             box-sizing: border-box;
+            
         }
         .single {
             @extend .album
@@ -25,11 +26,18 @@
         .imgportada {
             max-width: 100%; 
             height: auto;
+            &:hover {
+                scale: (0.9);
+                transition: 200ms linear 100ms;
+            }
         }
         .plataformas img {
             width: 30px;
             height: 30px;
             margin: 5px;
+            &:hover {
+                scale: (1.3);
+            }
         }
         
     }

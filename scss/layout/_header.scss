@@ -12,11 +12,14 @@ header {
         ul {
             display: flex;
             flex-direction: row;
-            gap: .9375rem;
+            gap: 1.0625rem;
             margin-right: 20px;
         }      
             li { 
                 list-style: none;
+                &:hover {
+                    scale: (1.1);
+                }
             }
                 a {
                     text-decoration: none;
