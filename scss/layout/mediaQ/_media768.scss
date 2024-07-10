@@ -11,20 +11,33 @@
                 max-width: 180px;
             }
         }
-        nav {
+        .menu-toggle {
+            display: block;
+        }
+    
+        .nav-menu {
+            display: none;
             width: 100%;
             text-align: center;
-            ul {
-                flex-direction: column;
-                margin: 0;
-                padding: 0;
-                gap: .0125rem;
-                li {
-                    margin: 10px 0;
-                }
-            }
+            flex-direction: column;
+        }
+    
+        .nav-menu ul {
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            gap: 0.0125rem;
+        }
+    
+        .nav-menu li {
+            margin: 10px 0;
+        }
+    
+        .nav-menu.show {
+            display: flex;
         }
     }
+    
 
     .banner {
         grid-template-areas:
